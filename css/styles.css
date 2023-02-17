@@ -169,7 +169,7 @@ img {
 /* hero-section */
 .hero {
   height: 600px;
-  min-width: 1440px;
+  max-width: 1440px;
   background-color: var(--main-text-color);
   padding-top: 188px;
   padding-bottom: 188px;
@@ -181,6 +181,7 @@ img {
     url("../images/hero-bcg.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -385,31 +386,32 @@ img {
   display: flex;
   gap: 24px;
   align-items: center;
-  justify-content: center;
+}
+
+.partners-icons-item {
+  width: 168px;
 }
 
 .partners-icons-link {
-  display: block;
-  padding: 16px 32px;
+  width: 100%;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-}
-
-.partners-icons {
-  display: block;
-  height: 56px;
-  width: 104px;
   fill: var(--customers-color);
 }
 
-.partners-icons:hover,
-.partners-icons:focus {
-  fill: var(--acent-color);
+.partners-icons {
+  height: 56px;
+  width: 104px;
 }
 
 .partners-icons-link:hover,
 .partners-icons-link:focus {
   border: 1px solid var(--acent-color);
+  fill: var(--acent-color);
 }
 
 /* portfolio */
@@ -462,7 +464,12 @@ img {
   margin-bottom: 48px;
 }
 
-.flex-element:hover {
+.flex-element-link {
+  display: block;
+}
+
+.flex-element-link:hover,
+.flex-element-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
